@@ -1,0 +1,16 @@
+name = "travel-copilot-worker"
+main = "src/index.ts"
+compatibility_date = "2024-02-08"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "development"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "travel-copilot-db"
+database_id = "bc315a47-fd41-493b-9858-32e6add59f6c"
+
+[[durable_objects.bindings]]
+name = "CHAT_ROOM"
+class_name = "ChatRoom" 
