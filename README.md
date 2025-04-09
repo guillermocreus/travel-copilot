@@ -100,3 +100,53 @@ npm run deploy
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Travel Copilot Backend
+
+This is the backend service for the Travel Copilot application, built with Cloudflare Workers.
+
+## Project Structure
+
+```
+backend/
+├── src/                    # Source code
+│   ├── api/               # API route handlers
+│   ├── services/          # Business logic
+│   ├── models/            # Data models and types
+│   ├── utils/             # Utility functions
+│   ├── config/            # Configuration files
+│   └── middleware/        # Middleware functions
+├── config/                # Configuration files
+├── database/              # Database related files
+│   ├── migrations/        # Database migrations
+│   └── schemas/          # Database schemas
+├── scripts/              # Utility scripts
+├── tests/                # Test files
+├── docs/                 # Documentation
+└── types/                # TypeScript type definitions
+```
+
+## Configuration
+
+- `config/cloudflare.config.toml`: Cloudflare Workers configuration
+- `config/.dev.vars`: Development environment variables
+
+## Development
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run development server:
+   ```bash
+   npm run dev
+   ```
+
+## Database Migrations
+
+Database migrations are stored in the `database/migrations` directory. To run migrations:
+
+```bash
+npm run migrate
+```

@@ -1,0 +1,2 @@
+name = "travel-copilot-backend"
+main = "src/api/index.ts" 
